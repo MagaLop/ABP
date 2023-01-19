@@ -1,0 +1,172 @@
+/**
+ * 
+ */
+package com.unab.AE2;
+
+import java.util.Scanner;
+
+/**
+ * @author vespertino
+ *
+ */
+public class AE2_ABPRO1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+				// TODO solicite una cantidad de usuarios a ingresar
+				// TODO tres perfiles: cliente, profesional y administrativo
+		
+				// TODO nombre, fecha de nacimiento y RUN para cada perfil
+				// TODO crear variable del rut 
+				// TODO crear variable del nombre
+				// TODO Cliente: dirección, teléfono, cantidad de empleados
+				// TODO Profesional: años de experiencia, departamento
+				// TODO Administrativo: función, nombre superior
+				// TODO se deben mostrar por pantalla. FIN
+		//Bucle  for para la cantidady no olvidar la restriccion del telefono
+		
+		
+		
+		
+		int usuario;
+		String nombre;
+		int rut;
+		String digito_verificador;
+		String fecha_de_nacimiento;
+		
+		String tipo_de_usuario;
+		
+		String cliente;
+		String profesional;
+		String administrativo;
+		
+		String Direccion;
+		int Telefono;
+		int cantidad_de_empleados;
+		
+		int Anos_de_experiencia;
+		String Departamento;
+		
+		String Funcion;
+		String Nombre_del_superior;
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		/**
+		 * @author vespertino
+		 *System.out.println("¿Cuantos usuarios desea ingresar?");
+				total = entrada.nextInt();
+		 */
+		
+		
+		System.out.println("¿Cuántos usuarios desea ingresar?");
+		
+		
+		System.out.println("Ingrese Los datos del usuario. ");
+				usuario = Integer.valueOf(entrada.nextLine());
+				
+				for(int i=usuario; i>0; i--) {
+		
+		System.out.println("Ingrese su nombre: ");
+		 nombre = entrada.nextLine();	
+				
+				 
+		System.out.println("Ingrese su rut: ");
+		rut = Integer.valueOf(entrada.nextLine());
+						
+				 
+		System.out.println("Fecha de nacimiento: ");
+		fecha_de_nacimiento = entrada.nextLine();		
+		
+		
+		System.out.println("Tipo de usuario (cliente, profesional, administrativo)");
+		tipo_de_usuario = entrada.nextLine();
+			 
+
+		 switch (tipo_de_usuario)
+			
+			{
+				case "cliente":
+					//cliente
+					
+					System.out.println("Ingrese datos del cliente: " + nombre);
+					
+					System.out.println("Ingresar Dirección: ");
+					Direccion = entrada.nextLine();
+					System.out.println("Ingresar Teléfono: ");
+					Telefono = Integer.valueOf(entrada.nextLine());
+					System.out.println("Ingresar cantidad de empleados: ");
+					cantidad_de_empleados  = Integer.valueOf(entrada.nextLine());
+					
+					
+					
+					System.out.println("____________________________________________");
+					System.out.println("Sus datos guardados son: ");
+					System.out.println("Nombre: " + nombre);
+					System.out.println("Rut: " + rut);
+					System.out.println("Fecha de nacimiento: " + fecha_de_nacimiento);
+					System.out.println("Dirección: " + Direccion);
+					System.out.println("Teléfono: " + Telefono);
+					System.out.println("Cantidad de empleados: " + cantidad_de_empleados);
+					System.out.println("____________________________________________");
+					
+					
+					break;
+					
+				case "profesional":
+					//profesional
+					
+					System.out.println("Ingrese datos del profesional: " + nombre);
+										
+					System.out.println("Ingresar Años de experiencia: ");
+					Anos_de_experiencia = Integer.valueOf(entrada.nextLine());
+					
+					System.out.println("Ingresar Departamento: ");
+					Departamento = entrada.nextLine();
+					
+					
+					System.out.println("____________________________________________");
+					System.out.println("Sus datos guardados son: ");
+					System.out.println("Nombre: " + nombre);
+					System.out.println("Rut: " + rut);
+					System.out.println("Fecha de nacimiento: " + fecha_de_nacimiento);
+					System.out.println("Años de experiencia: " + Anos_de_experiencia);
+					System.out.println("Departamento: " + Departamento);
+					System.out.println("____________________________________________");
+					
+					break;
+					
+				case "administrativo":
+					//administrativo
+					
+					System.out.println("Ingrese datos del administrativo: " + nombre);
+					
+					System.out.println("Ingresar Función: ");
+					Funcion = entrada.nextLine();
+					System.out.println("Ingresar Nombre del superior: ");
+					Nombre_del_superior = entrada.nextLine();
+					
+					
+					
+					System.out.println("____________________________________________");
+					System.out.println("Sus datos guardados son: ");
+					System.out.println("Nombre: " + nombre);
+					System.out.println("Rut: " + rut);
+					System.out.println("Fecha de nacimiento: " + fecha_de_nacimiento);
+					System.out.println("Función: " + Funcion);
+					System.out.println("Nombre del Superior: " + Nombre_del_superior);
+					System.out.println("____________________________________________");
+					
+					
+					break;
+			
+		}
+			
+	}
+	
+	
+
+}
+}

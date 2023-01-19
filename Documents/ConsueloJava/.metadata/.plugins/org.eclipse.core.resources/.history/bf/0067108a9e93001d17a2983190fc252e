@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+package com.unab;
+
+/**
+ * @author vespertino
+ *
+ */
+public class Repaso {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String a1= "x";
+		String a2= " ";
+		String a3= " ";
+		String b1= "x";
+		String b2= " ";
+		String b3= " ";
+		String c1= " ";
+		String c2= " ";
+		String c3= " ";
+		
+		System.out.println(a1 + "|" + a2 + "|" + a3);
+		System.out.println("_" + "|" + "_" + "|" + "_");
+		
+		System.out.println(b1 + "|" + b2 + "|" + b3);
+		System.out.println("_" + "|" + "_" + "|" + "_");
+		
+		System.out.println(c1 + "|" + c2 + "|" + c3);
+	
+		
+		
+		
+	}
+
+}

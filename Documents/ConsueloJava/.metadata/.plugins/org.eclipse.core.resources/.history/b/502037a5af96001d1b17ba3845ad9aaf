@@ -1,0 +1,54 @@
+/**
+ * 
+ */
+package com.unab;
+
+import java.util.Scanner;
+
+/**
+ * @author vespertino
+ *
+ */
+public class Iteradores {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		// TODO Auto-generated method stub
+/**
+		int contador =1;
+		int acumulado =0;
+		
+		while(contador <=20) {
+			acumulado = acumulado * contador;
+			contador++;
+			
+			//contador ++
+			//contador +1
+			//contador += 1
+		}
+		*/
+		
+		
+		
+		int acumulado = 0;
+		
+		
+		do {
+			System.out.println("Ingrese monto");
+			acumulado = acumulado + Integer.valueOf(entrada.nextLine());
+			
+			System out.println("Desea continuar? (S/N)");
+			respuesta = entrada.nextLine();
+		
+		}while(respuesta.equals("S"));
+		
+		//Tambien puede ser
+		//respuesta="S"
+		//while(respuesta.equals("S")){
+		
+	}
+
+}

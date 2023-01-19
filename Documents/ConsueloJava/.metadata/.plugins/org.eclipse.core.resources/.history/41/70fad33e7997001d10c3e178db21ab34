@@ -1,0 +1,40 @@
+/**
+ * 
+ */
+package com.unab;
+
+import java.util.ArrayList;
+
+/**
+ * @author vespertino
+ *
+ */
+public class arraylist {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ArrayList lista = new ArrayList();
+		
+		lista.add("Ana");
+		lista.add("Pepe");
+		lista.add("1");
+		
+		System.out.println(lista);
+		
+		lista.add("Cata");
+		
+		System.out.println(lista);
+		
+		
+		System.out.println(lista.size());
+		
+		//int num = Integer.valueOf(lista.get(2)) + 3
+		//se vera despues....
+		
+	}
+
+}

@@ -1,0 +1,101 @@
+/**
+ * 
+ */
+package com.unab;
+
+import java.util.Scanner;
+
+/**
+ * @author vespertino
+ *
+ */
+public class AE1_ABP {
+
+	/**
+	 * Una compañía de seguros requiere generar un algoritmo que permita rescatar los datos básicos de
+sus clientes, validarlos, y presentarlos por pantalla.
+
+	 * - RUT: corresponde a un número menor a 99.999.999
+- Nombres: campo obligatorio
+- Apellidos: campo obligatorio
+- Teléfono: no más de 15 caracteres
+- AFP: campo obligatorio
+- Sistema de salud: 1 (Fonasa) o 2 (Isapre), solo puede ser uno de ambos valores
+- Dirección: texto no superior a 50 caracteres
+- Comuna: campo obligatorio
+- Edad: menor a 120 años
+	 */
+	public static void main(String[] args) {
+		// TODO
+
+		
+		String nombre;
+		String rut;
+		String telefono;
+		String afp;
+		String fonasa;
+		String isapre;
+		String direccion;
+		String comuna;
+		String edad;
+		
+		
+		
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		
+		System.out.println("Ingrese Los datos del cliente");
+		
+		System.out.println("Nombre: ");
+		 nombre = entrada.nextLine();
+		
+		System.out.println("rut: ");
+		 rut = entrada.nextLine();
+		 
+		System.out.println("Teléfono: ");
+		 telefono = entrada.nextLine(); 
+		 
+		
+		 
+		/*if (afp == isapre) {
+			  System.out.println("Isapre");
+		 }else{
+			  System.out.println("Fonasa");
+		 }	
+		 */
+		 
+		 
+		 System.out.println("AFP )");
+			afp = entrada.nextLine();
+				 
+
+			 switch (afp)
+				
+				{
+					case "Isapre":
+						//isapre
+						
+						System.out.println("Isapre " );
+						
+						break;
+						
+					case "Fonasa":
+						//fonasa
+						
+						System.out.println("Fonasa " );		
+		 
+						break;
+				}
+		 
+		 
+		 
+		
+	}
+
+	private static boolean afp(String isapre) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

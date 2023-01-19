@@ -1,0 +1,139 @@
+/**
+ * 
+ */
+package com.unab;
+
+import java.util.Scanner;
+
+/**
+ * @author vespertino
+ *
+ */
+public class AE2_ABPRO1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+				// TODO solicite una cantidad de usuarios a ingresar
+				// TODO tres perfiles: cliente, profesional y administrativo
+		
+				// TODO nombre, fecha de nacimiento y RUN para cada perfil
+				// TODO crear variable del rut 
+				// TODO crear variable del nombre
+				// TODO Cliente: dirección, teléfono, cantidad de empleados
+				// TODO Profesional: años de experiencia, departamento
+				// TODO Administrativo: función, nombre superior
+				// TODO se deben mostrar por pantalla. FIN
+		
+		String usuario;
+		
+		
+		
+		String nombre;
+		String rut;
+		String fecha_de_nacimiento;
+		
+		String tipo_de_usuario;
+		
+		String cliente;
+		String profesional;
+		String administrativo;
+		
+		String Direccion;
+		String Telefono;
+		String cantidad_de_empleados;
+		
+		String Años_de_experiencia;
+		String Departamento;
+		
+		String Funcion;
+		String Nombre_del_superior;
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		/**
+		 * @author vespertino
+		 *System.out.println("¿Cuantos usuarios desea ingresar?");
+				total = entrada.nextInt();
+		 */
+		
+		int numerousuario;
+
+		do {
+		    System.out.println("Introduce Numero de usuarios");
+		    numerousuario = entrada.nextInt();
+		    System.out.println(numerousuario);
+		} while (numerousuario <= 0);
+		
+		
+		System.out.println("Ingrese Los datos del usuario 1");
+				
+		
+		System.out.println("Nombre: ");
+		 nombre = entrada.nextLine();	
+				
+				 
+		System.out.println("Rut: ");
+		rut = entrada.nextLine();		 
+				
+						
+				 
+		System.out.println("Fecha de nacimiento:  -  -  ");
+		fecha_de_nacimiento = entrada.nextLine();		
+		
+		
+		System.out.println("Tipo de usuario (cliente, profesional, administrativo)");
+		tipo_de_usuario = entrada.nextLine();
+			 
+
+		 switch (tipo_de_usuario)
+			
+			{
+				case "cliente":
+					//cliente
+					
+					System.out.println("Ingrese datos del cliente: " + nombre);
+					
+					System.out.println("Ingresar Direccion: ");
+					Direccion = entrada.nextLine();
+					System.out.println("Ingresar Telefono: ");
+					Telefono = entrada.nextLine();
+					System.out.println("Ingresar cantidad de empleados: ");
+					cantidad_de_empleados  = entrada.nextLine();
+					
+					break;
+					
+				case "profesional":
+					//profesional
+					
+					System.out.println("Ingrese datos del profesional: " + nombre);
+										
+					System.out.println("Ingresar Años de experiencia: ");
+					Años_de_experiencia = entrada.nextLine();
+					
+					System.out.println("Ingresar Departamento: ");
+					Departamento = entrada.nextLine();
+					
+					break;
+					
+				case "administrativo":
+					//administrativo
+					
+					System.out.println("Ingrese datos del administrativo: " + nombre);
+					
+					System.out.println("Ingresar Funcion: ");
+					Funcion = entrada.nextLine();
+					System.out.println("Ingresar Nombre del superior: ");
+					Nombre_del_superior = entrada.nextLine();
+					
+					break;
+			
+		}
+			
+	}
+	
+	
+
+}
+

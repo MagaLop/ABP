@@ -1,0 +1,108 @@
+/**
+ * 
+ */
+package com.unab;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+/**
+ * @author vespertino
+ *
+ */
+public class ejerciciosboni {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+	// 1.- Suma los números del 1 al 100 y muestra el resultado en pantalla.
+
+		
+		 		
+	//	int suma = 0;
+	//	for (int i=1; i<=100; i++) {
+	//	   suma += i;
+	//	}
+	//	System.out.println("La suma es: " + suma);
+ 
+	//____________________________________
+		//2.- Imprime los números del 10 al 1 utilizando un ciclo for
+	//	int i=0;
+		
+	//	for (i=0; i>=10; i--);
+	//	{
+	//		System.out.println(i);
+	//	i--;
+		//}
+		
+	//	for (int i = 10; i >= 1; i -= 1) {
+	//	        System.out.println(i);
+	//	    }
+	//___________________________________________	
+	
+	//	3.- Crea un arreglo de enteros de tamaño 5 y 
+	//	llénalo con valores ingresados por el usuario.
+		
+	// int[] numbers = {1, 2, 3, 4, 5};	
+		
+		
+
+		// int [] enteros;
+		
+		// enteros = new int[5]; 
+		
+		//for (int i = 0; i < 5; i++);{
+		// System.out.println("llenar con valores" + enteros);
+		
+		//		}
+		
+		Scanner entrada = new Scanner(System.in);
+		
+	//	System.out.println("Llenar con 5 valores:");
+		
+	//	String valores;
+	//	int[] enteros = new int[5];
+	//________________________________________________	
+		//enteros[0] = 5;
+		//enteros[1] = 6;
+		//enteros[2] = 8;
+		//enteros[3] = 2;
+		//enteros[4] = 4;
+	//_______________________________________________	
+	//	for (int i = 0; i < enteros.length; i++) {
+	//		enteros[i] = Integer.valueOf(entrada.nextLine());
+	
+		//	esta linea nopero tambien funciona//  System.out.print(enteros[i] + " ");
+	//				}
+	//			
+	//	System.out.println(Arrays.toString(enteros));
+		
+		
+		
+	//_______________________________________________
+		
+	//4.- ⦁	Encontrar el elemento máximo de un arreglo 
+	//	    de enteros que contiene los siguientes valores 
+	//  	{7, 9, 21, 2, 68, 51}	
+		
+		
+		int[] enteros = {7, 9, 21, 2, 68, 51};
+		
+		int max = enteros [0];
+		
+		for(int i=0; i<enteros.length; i++);{
+		// i=0? por que no 1? 
+		//la longitud tiene que ser mayor que el i 
+		//Si enteros mayor que i max, entonces max =enteros[i]???
+		
+		if (enteros[i] > max) {
+					max = enteros[i];
+		}
+					
+	}
+		System.out.println("El número máximo es: " + max);
+		
+		
+}
+}

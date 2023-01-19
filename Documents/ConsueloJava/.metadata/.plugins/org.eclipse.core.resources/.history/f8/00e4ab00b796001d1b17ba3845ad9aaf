@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+package com.unab;
+
+import java.util.Arrays;
+
+/**
+ * @author vespertino
+ *
+ */
+public class Matrices {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	String edades[][] = new String[3][2];
+	
+	edades[0][0] = "A";
+	edades[0][1] = "B";	
+	
+	edades[1][0] = "C";
+	edades[1][1] = "D";	
+		
+	edades[2][0] = "E";
+	edades[2][10] = "F";	
+	
+	System.out.println(Arrays.toString(edades[0]));
+		
+		
+	}
+
+}

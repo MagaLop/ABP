@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\vespertino\Documents\ConsueloJava\.metadata\.plugins\org.eclipse.jdt.core
+2028205186.index
+3501714628.index
+2461555211.index

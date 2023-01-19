@@ -1,0 +1,59 @@
+/**
+ * 
+ */
+package com.unab;
+
+import java.util.Scanner;
+
+/**
+ * @author vespertino
+ *
+ */
+public class AE2_ABPRO1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String usuario;
+		int total;
+		
+		String rut;
+		String nombre;
+		String fecha_de_nacimiento;
+		
+		String cliente;
+		String profesional;
+		String administrativo;
+		
+		Scanner entrada = new Scanner(System.in);
+		int total1;
+		System.out.println("¿Cuantos usuarios desea ingresar?");
+		
+		total + entrada.nextLine();
+		System.out.println(total);
+		
+		System.out.println("Ingrese sus datos");
+		
+		System.out.println("Rut: ");
+		
+		
+		
+		System.out.println("Nombre: ");
+		System.out.println("Fecha de nacimiento:  -  -  ");
+		
+		
+		
+	 cliente = entrada.nextLine();
+	 	
+	 profesional = entrada.nextLine();
+	 administrativo = entrada.nextLine();
+	 
+
+		
+		
+	}
+
+}

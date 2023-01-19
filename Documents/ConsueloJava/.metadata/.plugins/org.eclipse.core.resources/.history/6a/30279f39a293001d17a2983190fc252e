@@ -1,0 +1,58 @@
+/**
+ * 
+ */
+package com.unab;
+
+import java.util.Scanner;
+
+/**
+ * @author vespertino
+ *
+ */
+public class Repaso {
+
+	public static void tablero()
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+		
+		public static Scanner entrada = new Scanner(System.in);
+		public static String a1= " ";
+		public static String a2= " ";
+		public static String a3= " ";
+		public static String b1= " ";
+		public static String b2= " ";
+		public static String b3= " ";
+		public static String c1= " ";
+		public static String c2= " ";
+		public static String c3= " ";
+		public static String respuesta;
+		
+		public static void tablero() {
+		
+		System.out.println(" 1 2 3");
+		System.out.println(" ");
+		
+		System.out.println("a " + a1 + "|" + a2 + "|" + a3);
+		System.out.println("_|_|_");
+		
+		System.out.println("b " + b1 + "|" + b2 + "|" + b3);
+		System.out.println("_|_|_");
+		
+		System.out.println("c " + c1 + "|" + c2 + "|" + c3);
+	
+		System.out.println("Jugador 1, ingrese casilla (Fila columnas) Ej a1:");
+		
+		respuesta = entrada.nextLine();
+		
+		switch (respuesta) {
+		case "a1:"
+				
+		}
+		
+	}
+
+}

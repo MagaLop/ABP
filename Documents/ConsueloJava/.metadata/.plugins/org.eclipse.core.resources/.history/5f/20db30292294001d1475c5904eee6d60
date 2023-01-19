@@ -1,0 +1,111 @@
+/**
+ * 
+ */
+package com.unab;
+
+import java.util.Scanner;
+
+/**
+ * @author vespertino
+ *
+ */
+public class AE2_ABPRO1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+				// TODO solicite una cantidad de usuarios a ingresar
+				// TODO tres perfiles: cliente, profesional y administrativo
+		
+				// TODO nombre, fecha de nacimiento y RUN para cada perfil
+				// TODO crear variable del rut 
+				// TODO crear variable del nombre
+				// TODO Cliente: dirección, teléfono, cantidad de empleados
+				// TODO Profesional: años de experiencia, departamento
+				// TODO Administrativo: función, nombre superior
+				// TODO se deben mostrar por pantalla. FIN
+		
+		String usuario;
+		int total;
+		
+		
+		String nombre;
+		String rut;
+		String fecha_de_nacimiento;
+		
+		String tipo_de_usuario;
+		
+		String cliente;
+		String profesional;
+		String administrativo;
+		
+		Scanner entrada = new Scanner(System.in);
+		int total1;
+		/**
+		 * @author vespertino
+		 *System.out.println("¿Cuantos usuarios desea ingresar?");
+				total = entrada.nextInt();
+		 */
+		
+		
+		
+		
+		System.out.println("Ingrese Los datos del usuario 1");
+				
+		
+		System.out.println("Nombre: ");
+		 nombre = entrada.nextLine();	
+				
+				 
+		System.out.println("Rut: ");
+		rut = entrada.nextLine();		 
+				
+						
+				 
+		System.out.println("Fecha de nacimiento:  -  -  ");
+		fecha_de_nacimiento = entrada.nextLine();		
+		
+		
+		System.out.println("Tipo de usuario (cliente, profesional, administrativo)");
+		tipo_de_usuario = entrada.nextLine();
+			 
+
+		 switch (tipo_de_usuario)
+			
+			{
+				case "cliente":
+					//cliente
+					
+					System.out.println("Ingrese datos del cliente: " + nombre +  fecha_de_nacimiento +  rut );
+					System.out.println("Ingresar Direccion: ");
+					System.out.println("Ingresar Telefono: ");
+					System.out.println("Ingresar cantidad de empleados: ");
+					break;
+					
+				case "profesional":
+					//profesional
+					
+					System.out.println("Ingrese datos del profesional: " + nombre + fecha_de_nacimiento + rut );
+					System.out.println("Ingresar Años de experiencia: ");
+					System.out.println("Ingresar Departamento: ");
+					
+					break;
+					
+				case "administrativo":
+					//administrativo
+					
+					System.out.println("Ingrese datos del administrativo: " + nombre + fecha_de_nacimiento + rut );
+					System.out.println("Ingresar Función: ");
+					System.out.println("Ingresar Nomre del superior: ");
+					
+					break;
+			
+		}
+			
+	}
+	
+	
+
+}
+

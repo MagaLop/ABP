@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+package com.unab;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+/**
+ * @author vespertino
+ *
+ */
+public class Arreglos {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		
+		int edades[] = new int[14];
+		int suma = 0;
+		
+		for(int i=0; i<14; i++) {
+			System.out.println(i + "Edad?");
+			edades[i] = entrada.nextInt();
+			
+		}
+		System.out.println(Arrays.toString(edades));
+		
+		for(int i=0; i<14; i++) {
+		 System.out.println(edades[i]);
+		 suma += edades[i];
+		}
+		System.out.println("Promedio es: ");
+		System.out.println(suma/edades.length);
+		
+	}
+
+}
