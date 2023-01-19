@@ -27,7 +27,7 @@ public class AE2_ABP3 {
 		// hacer todo de nuevo con sistema booleano
 		/*
 		String trabajador;
-		String cuida;
+		
 		String lee;
 		String cumple;
 		String leer;
@@ -39,14 +39,38 @@ public class AE2_ABP3 {
 		}
 		*/
 		//________________________________
+		// hacer todo de nuevo con sistema booleano
 		
+		String trabajador;
 		
+		//String lee;
+		//String cumple;
+		String leer;
 		
-		
-		
-		
-		
-		
+		boolean cumple;
+        cumple = false;
+       // System.out.println("Cumple Procedimiento Seguridad: " + cumple);
+        
+        cumple = true;
+       // System.out.println("Cumple Procedimiento Seguridad: " + cumple);
+        
+        if (cumple == true) {
+            System.out.println("Cumple Procedimiento Seguridad");
+				 }
+        
+        
+        boolean lee;
+        lee = false;
+      //  System.out.println("Lee Manual Seguridad: " + lee);
+        
+        lee = true;
+      //  System.out.println("Lee Manual Seguridad: " + lee);
+        
+        if (lee == true) {
+            System.out.println("Lee Manual Seguridad");
+        }
+        
+        
 	}
-
+        
 }
