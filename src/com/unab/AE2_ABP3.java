@@ -41,7 +41,7 @@ public class AE2_ABP3 {
 		    System.out.println("Ocurrirá un accidente");
 		}
 		*/
-		
+		//_______________________________________________________
 		//Desde aqui funciona.... ocupar equals
 		
         Scanner entrada = new Scanner(System.in);
@@ -61,7 +61,7 @@ public class AE2_ABP3 {
             System.out.println("Ocurrirá un accidente. ");
         }
 		
-		
+		//_____________________________________________________________
 		//hasta aca
 		
 		
