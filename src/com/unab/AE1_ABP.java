@@ -31,13 +31,14 @@ sus clientes, validarlos, y presentarlos por pantalla.
 		
 		String nombre;
 		String apellido;
+		String afp;
 		int rut;
-		int telefono;
+		int telefono = 0;
 		int sistema_de_salud;
 		
 		String direccion;
 		String comuna;
-		int edad;
+		int edad = 0;
 		
 		
 		
@@ -59,15 +60,37 @@ sus clientes, validarlos, y presentarlos por pantalla.
 			 System.out.println("Rut inválido. ");
 		 }
 		
-		 		 
-		System.out.println("Teléfono: +56 9  ");
+				 
+		System.out.println("Ingrese su número de teléfono: ");
+		System.out.print("+56 9 ");
 		 telefono = Integer.valueOf(entrada.nextLine()); 
 		 if (telefono < 0 || telefono > 99999999) {
 			 System.out.println("Número Incorrecto. ");
 		 }
 		 
+		 /*
+		 while (telefono < 0 || telefono > 99999999) {
+			    System.out.println("Número Incorrecto, ingresa de nuevo: +56 9 ");
+			    telefono = Integer.valueOf(entrada.nextLine());
+			}
 		 
-		
+		 System.out.println(" ");
+		 telefono = Integer.valueOf(entrada.nextLine());
+		 while (telefono < 10000000 || telefono > 99999999) {
+		     System.out.println("Número Incorrecto, ingresa de nuevo con 8 digitos: +56 9 ");
+		     telefono = Integer.valueOf(entrada.nextLine());
+		 }
+		 System.out.println("Teléfono: +56 9  ");
+		 String telefonoInput = entrada.nextLine();
+		 while (!telefonoInput.matches("[0-9]+") || telefonoInput.length() != 8) {
+		     System.out.println("Número Incorrecto, ingresa de nuevo con 8 digitos: +56 9 ");
+		     telefonoInput = entrada.nextLine();
+		 }
+		 telefono = Integer.valueOf(telefonoInput);
+		 */
+		 
+		 System.out.println("Ingrese su AFP: ");
+		 afp = entrada.nextLine();
 		 
 		/* switch (afp)
 				
@@ -94,30 +117,59 @@ sus clientes, validarlos, y presentarlos por pantalla.
 		  
 		  
 				 
-		  if (sistema_de_salud == 1) {
-			  System.out.println("Isapre");
-		 }else if (sistema_de_salud == 2) {
-			  System.out.println("Fonasa");
+		  if (sistema_de_salud == 1 || sistema_de_salud == 2) {
+		//	  System.out.println("Isapre");
+		// }else if (sistema_de_salud == 2) {
+		//	  System.out.println("Fonasa");
 		 }else {
 			 System.out.println("Ingrese la opción válida.");
+			 sistema_de_salud = Integer.valueOf(entrada.nextLine()); 
 		 }
 
+		 entrada.nextLine();
 			  
-			 System.out.println("Edad: ");
-			  edad = Integer.valueOf(entrada.nextLine());
-			  
-			  if (edad>120) {
-				  System.out.println("Edad Incorrecta");
-			  }
+		  if (edad <= 0 || edad > 120) {
+			    System.out.println("Edad Incorrecta");
+			} else {
+			    System.out.println("Ingresa nuevamente");
+			}
+		  while (edad <= 0 || edad > 120) {
+			    System.out.println("Edad Incorrecta, ingresa de nuevo:");
+			    edad = Integer.valueOf(entrada.nextLine());
+			}
 			  
 			
+			
+			  System.out.println("Dirección:(no mas de 50 caracteres) ");
+			  direccion = entrada.nextLine();
 			  
-			  System.out.println("Difrección: ");
-			  direccion = entrada.nextLine(); 
+			  /*   if(direccion.length()>0 && direccion.length()<=50) {}
+			  else
+				  System.out.println("Ingresa tu direccion nuevamente");
+			*/
+		  
+		  while (direccion.length() <= 0 || direccion.length() > 50) {
+		  System.out.println("La dirección debe tener entre 1 y 50 caracteres. Ingrese nuevamente:");
+		  direccion = entrada.nextLine();
+		  }
 
+		  
+				  
 			
 			  System.out.println("Comuna: ");
 			  comuna = entrada.nextLine();
+			 
+			  /*if (comuna.length() !=0) {
+				  
+			  }else {
+				  System.out.println("Ingrese tu comuna nuevamente. ");
+			  }
+			  */
+			 
+			  while (comuna.length() == 0) {
+			  System.out.println("Debe ingresar una comuna. Ingrese nuevamente:");
+			  comuna = entrada.nextLine();
+			  }
 			  
 			  
 System.out.println("_______________");
@@ -128,13 +180,16 @@ System.out.println("Datos Reunidos");
 
 
 System.out.println("Rut: " + rut);
-System.out.println("Nombre y Apellido: " + nombre + apellido);
-System.out.println("Teléfono: +56 9" + telefono);
+System.out.println("Nombre completo: " + nombre + apellido);
+System.out.println("Teléfono: +56 9 " + telefono);
+System.out.println("AFP: " + afp);
 System.out.println("Sistema de Salud: " + sistema_de_salud);
 System.out.println("Dirección: " + direccion);
 System.out.println("Comuna: " + comuna);
 System.out.println("Edad: " + edad);
 
+System.out.println("_______________");
+System.out.println("_______________");
 	}
 
 	
