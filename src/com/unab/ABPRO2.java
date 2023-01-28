@@ -160,7 +160,7 @@ public class ABPRO2 {
 			lugar = entrada.nextLine();
 		}
 
-//___________________Lugar_de_Capacitacion__________
+//___________________duracion_de_Capacitacion__________
 		Scanner duraciones = new Scanner(System.in);
 		System.out.print("Ingrese la duración de la capacitación (HH:mm): \n");
 		String inputs = duraciones.nextLine();
